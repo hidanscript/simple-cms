@@ -1,0 +1,21 @@
+.home-screen {
+    width:100%;
+    margin-left: 4em;
+    height: 100%;
+}
+
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-album img {
+    max-width: 8em;
+    margin:2em;
+    cursor: pointer;
+    transition: 250ms ease;
+}
+
+.home-album img:hover {
+    opacity: 0.5;
+}
