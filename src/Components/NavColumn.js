@@ -13,9 +13,6 @@ function NavColumn() {
             <div className="btn-nav">
                 <i className="fas fa-trash"></i>
             </div>
-            <div className="btn-nav btn-notification inactive">
-                <i className="fas fa-bell"></i>
-            </div>
         </nav>
     );
 }

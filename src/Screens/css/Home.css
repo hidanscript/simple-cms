@@ -1,16 +1,33 @@
 .home-screen {
+    position: absolute;
     width:100%;
-    margin-left: 4em;
     height: 100%;
+    display:grid;
+    grid-template-columns: 2em 1fr;
+    grid-template-rows: 2em 1fr;
+}
+
+.nav-navigation {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.toolbar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 .container { 
+    grid-column: 2/3;
+    grid-row: 2/3;
     display: flex;
     flex-wrap: wrap;
+    height:100%;
+    width:100%;
 }
 
 .home-album img {
-    max-width: 8em;
+    max-width: 7em;
     margin:2em;
     cursor: pointer;
     transition: 250ms ease;
@@ -18,4 +35,17 @@
 
 .home-album img:hover {
     opacity: 0.5;
+}
+
+.albums {
+    position: relative;
+    width:80vw;
+    max-height: 90vh;
+    overflow:auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    color:black;
 }
