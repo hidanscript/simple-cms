@@ -3,7 +3,7 @@ import './css/NavBar.css';
 function NavBar() {
     return (
         <div className="nav-bar">
-            <h2>CMS</h2>
+            <h2>Content Management System</h2>
         </div>
     )
 }

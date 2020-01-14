@@ -22,8 +22,15 @@
     grid-row: 2/3;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height:100%;
     width:100%;
+}
+
+.container > * {
+    font-family: Roboto;
 }
 
 .home-album img {
@@ -38,9 +45,10 @@
 }
 
 .albums {
+    border: 2px solid lightgray;
     position: relative;
-    width:80vw;
-    max-height: 90vh;
+    width:70vw;
+    max-height: 70vh;
     overflow:auto;
     display:flex;
     flex-wrap: wrap;

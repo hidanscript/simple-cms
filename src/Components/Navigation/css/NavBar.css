@@ -6,6 +6,9 @@
 }
 
 .nav-bar h2 {
+    margin-left:0.5em;
+    font-family: lobster;
+    font-size: 1em;
     align-self: center;
     color:white;
 }

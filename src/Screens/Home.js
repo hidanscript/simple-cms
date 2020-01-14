@@ -1,26 +1,21 @@
-import React, { useEffect , useState } from 'react';
+import React from 'react';
 import './css/Home.css';
 import NavColumn from './../Components/NavColumn';
 import NavBar from './../Components/Navigation/NavBar';
+import { Switch, Route } from 'react-router-dom';
+
+//Screens
+import Albums from './Albums';
+import HomeScreen from './HomeScreen';
+import AddScreen from './AddScreen';
 
 function Home() {
 
-    const [ albums, setAlbums ] = useState([]);
-
-    useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/photos?albumId=1")
-            .then(res => res.json())
-            .then(json => setAlbums(json));
-    }, []);
-    
+    /*
     const selectAlbum = index => {
         albums[index] = {...albums[index] , active: !albums[index].active};
     };
-
-    let mapAlbums = albums.map( (element, index) => {
-        element = {...element , key:index }
-        return <div key={index} className="home-album"><img onClick={() => selectAlbum(element.key)} src={element.url} alt="album" /></div>;
-    });
+    */
 
     return (
         <div className="home-screen">
@@ -30,12 +25,17 @@ function Home() {
             <div className="toolbar">
                 <NavColumn />
             </div>
-            
+            {
+            //pages
+            }
             <div className="container">
-                <h1>Home</h1>
-                <div className="albums">
-                    {mapAlbums}
-                </div>
+                <Route render={({location}) => (
+                    <Switch>
+                        <Route exact path="/" component={HomeScreen}/>
+                        <Route path="/albums" component={Albums}/>
+                        <Route path="/add" component={AddScreen}/>
+                    </Switch>
+                )} />
             </div>
         </div>
     )

@@ -18,12 +18,12 @@
 }
 
 .btn-nav:hover {
-    background-color: #A1A1FF;
+    background-color: rgba(255,255,255,.2);
 }
 
 .btn-nav i {
     align-self: center;
-    font-size:1.4em;
+    font-size:1em;
 }
 
 .btn-notification {
@@ -33,4 +33,9 @@
 
 .inactive {
     opacity: 0.5;;
+}
+
+.links {
+    text-decoration: none;
+    color:white;
 }
