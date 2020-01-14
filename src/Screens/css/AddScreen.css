@@ -1,0 +1,54 @@
+.add-screen {
+    text-align: left;
+    margin-left:1em;
+}
+
+.add-post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:50vw;
+}
+
+.add-post-form .add-input {
+    border:1px solid lightgray;
+    border-radius: 16px;
+    padding:0.6em;
+    height: 2em;
+    width: 100%;
+    margin-bottom:1em;
+    font-family: Roboto;
+    font-size: 0.5em;
+    outline: none;
+}
+
+.add-post-form textarea {
+    border:1px solid lightgray;
+    border-radius: 16px;
+    resize: none;
+    outline: none;
+    width: 100%;
+    margin-bottom:1em;
+    font-size: 0.6em;
+    font-family: Roboto;
+    padding: 1em;
+}
+
+.btn-submit {
+    background-color: #0275d8;
+    margin-bottom:1em;
+    font-family: Roboto;
+    font-size: 0.6em;
+    width:8em;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    height: 2em;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.btn-submit:hover {
+    background-color: #5bc0de;
+}
